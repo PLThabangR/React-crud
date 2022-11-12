@@ -12,6 +12,7 @@ import {
   MDBNavbarBrand,
   MDBCollapse
 } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     const [showNavColor, setShowNavColor] = useState(false);
@@ -32,7 +33,9 @@ export default function Navbar() {
           >
             <MDBIcon icon='bars' fas />
           </MDBNavbarToggler>
-          <MDBBtn>Add user</MDBBtn>
+          
+          <Link className='btn btn-outline-white mx-2' to="/adduser">Add user</Link>
+         
         </MDBContainer>
         
        
